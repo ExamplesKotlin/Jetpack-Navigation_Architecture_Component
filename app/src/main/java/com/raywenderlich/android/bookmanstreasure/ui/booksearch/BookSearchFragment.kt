@@ -42,6 +42,8 @@ import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.InputMethodManager
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import androidx.navigation.Navigation
+import androidx.navigation.fragment.NavHostFragment.findNavController
 import com.bumptech.glide.Glide
 import com.raywenderlich.android.bookmanstreasure.R
 import com.raywenderlich.android.bookmanstreasure.data.SearchCriteria
@@ -135,6 +137,13 @@ class BookSearchFragment : Fragment() {
     rvBooks.adapter = adapter
     adapter.itemClickListener = {
       //TODO implement navigation to Book details
+//      findNavController().navigate(R.id.actionBooksDetails)
+
+
+//      val action = LyannaFragmentDirections.actionLyannaFragmentToJonSnowFragment()
+//      action.setWhoami(getString(R.string.jhon_snow))
+      view?.let { Navigation.findNavController(it).navigate(R.id.actionBooksDetails) }
+
     }
 
     viewModel.data.observe(this, Observer {

@@ -14,6 +14,9 @@
   app:startDestination="@+id/bookSearchFragment"
   >
 
+  <action
+    android:id="@+id/actionBooksDetails"
+    app:destination="@id/workDetailsFragment" />
 </fragment>
 
   <fragment
