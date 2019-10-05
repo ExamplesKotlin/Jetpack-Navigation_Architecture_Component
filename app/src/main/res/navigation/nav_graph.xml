@@ -30,7 +30,7 @@
     android:name="com.raywenderlich.android.bookmanstreasure.ui.favorites.FavoritesFragment"
     android:label="FavoritesFragment" >
     <action
-      android:id="@+id/action_favoritesFragment_to_workDetailsFragment"
+      android:id="@+id/actionBookDetails"
       app:destination="@id/workDetailsFragment" />
   </fragment>
 
