@@ -2,7 +2,8 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tool="http://schemas.android.com/tools"
-  android:id="@+id/nav_graph">
+  android:id="@+id/nav_graph"
+  app:startDestination="@id/workDetailsFragment">
 
 
 <fragment
@@ -14,6 +15,13 @@
   >
 
 </fragment>
+
+  <fragment
+    android:id="@+id/workDetailsFragment"
+    android:name="com.raywenderlich.android.bookmanstreasure.ui.workdetails.WorkDetailsFragment"
+    android:label="WorkDetailsFragment"
+    tool:layout="@layout/fragment_work_details"
+    />
 
 
 </navigation>
