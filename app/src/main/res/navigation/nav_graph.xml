@@ -25,6 +25,14 @@
     android:label="WorkDetailsFragment"
     tool:layout="@layout/fragment_work_details"
     />
+  <fragment
+    android:id="@+id/favoritesFragment"
+    android:name="com.raywenderlich.android.bookmanstreasure.ui.favorites.FavoritesFragment"
+    android:label="FavoritesFragment" >
+    <action
+      android:id="@+id/action_favoritesFragment_to_workDetailsFragment"
+      app:destination="@id/workDetailsFragment" />
+  </fragment>
 
 
 </navigation>
