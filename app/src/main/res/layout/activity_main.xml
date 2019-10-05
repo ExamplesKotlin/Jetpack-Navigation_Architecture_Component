@@ -37,7 +37,7 @@ THE SOFTWARE.
   tools:openDrawer="start">
 
 
-  <FrameLayout
+  <fragment
     android:id="@+id/navHostFragment"
     android:name="androidx.navigation.fragment.NavHostFragment"
     android:layout_width="match_parent"
