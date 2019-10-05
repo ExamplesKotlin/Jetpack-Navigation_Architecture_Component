@@ -35,8 +35,10 @@ import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
+import androidx.navigation.fragment.NavHostFragment
 import com.raywenderlich.android.bookmanstreasure.ui.MainActivityDelegate
 import kotlinx.android.synthetic.main.activity_main.*
+import androidx.navigation.Navigation.findNavController
 
 class MainActivity : AppCompatActivity(), MainActivityDelegate {
 
@@ -47,6 +49,8 @@ class MainActivity : AppCompatActivity(), MainActivityDelegate {
 
     //TODO initialize navigation graph
   }
+
+  override fun onSupportNavigateUp() = findNavController(this, R.id.navHostFragment).navigateUp()
 
   override fun onBackPressed() {
     if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
