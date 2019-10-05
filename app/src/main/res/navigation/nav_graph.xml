@@ -9,7 +9,9 @@
   android:id="@+id/bookSearchFragment"
   android:name="com.raywenderlich.android.bookmanstreasure.ui.booksearch.BookSearchFragment"
   android:label="Book Search Fragment"
-  tool:layout="@layout/fragment_book_search" >
+  tool:layout="@layout/fragment_book_search"
+  app:startDestination="@+id/bookSearchFragment"
+  >
 
 </fragment>
 
